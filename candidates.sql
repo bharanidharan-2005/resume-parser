@@ -1,0 +1,8 @@
+CREATE TABLE candidates (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name NVARCHAR(100),
+    email NVARCHAR(100),
+    phone NVARCHAR(20),
+    skills NVARCHAR(MAX),
+    created_at DATETIME DEFAULT GETDATE()
+);
